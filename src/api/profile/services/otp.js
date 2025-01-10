@@ -105,13 +105,13 @@ module.exports.sendOTP = async (email) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "uq0803@gmail.com", // Replace with your email
-      pass: "gsfp ifld qnmc wwqd", // Replace with your app-specific password
+      user: "veerkalpit@gmail.com", // Replace with your email
+      pass: "uhoy kvkn dbeo brfw", // Replace with your app-specific password
     },
   });
 
   const mailOptions = {
-    from: '"TechChaze" <uq0803@gmail.com>', // Replace with your sender email
+    from: '"TechChaze" <veerkalpit@gmail.com>', // Replace with your sender email
     to: email,
     subject: "Your OTP for Your Email Verification at Ecommerce TechChaze",
     text: `Your OTP is ${OTP}`,
